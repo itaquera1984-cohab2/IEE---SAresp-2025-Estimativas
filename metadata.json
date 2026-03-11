@@ -1,0 +1,5 @@
+{
+  "name": "Dashboard IEE Pindamonhangaba",
+  "description": "Análise do Índice de Eficiência Educacional (IEE) de 37 escolas, com cálculo de metas, gargalos e exportação para BI.",
+  "requestFramePermissions": []
+}
