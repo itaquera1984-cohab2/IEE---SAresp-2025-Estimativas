@@ -1,5 +1,5 @@
 import React from 'react';
-import { processedData } from '../data';
+import { processedData } from '../GoalAnalyst';
 import { Trophy, AlertTriangle, TrendingUp, TrendingDown, Minus, Table2, CheckCircle, AlertCircle } from 'lucide-react';
 
 const getCategory = (iee: number) => {

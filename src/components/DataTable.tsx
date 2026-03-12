@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ProcessedSchool } from '../data';
+import { ProcessedSchool } from '../GoalAnalyst';
 import { Search, ArrowUpDown, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 
 interface DataTableProps {

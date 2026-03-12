@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { processedData } from './data';
-import { Dashboard } from './components/Dashboard';
+import { processedData } from './GoalAnalyst';
+import { SchoolDashboard } from './components/SchoolDashboard';
 import { DataTable } from './components/DataTable';
 import { ExportView } from './components/ExportView';
 import { ReportView } from './components/ReportView';
@@ -125,7 +125,7 @@ export default function App() {
           </p>
         </div>
 
-        {activeTab === 'dashboard' && <Dashboard data={processedData} />}
+        {activeTab === 'dashboard' && <SchoolDashboard data={processedData} />}
         {activeTab === 'table' && <DataTable data={processedData} />}
         {activeTab === 'report' && <ReportView />}
         {activeTab === 'export' && <ExportView data={processedData} />}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ProcessedSchool, generateJSON, generateMarkdownTable } from '../data';
+import { ProcessedSchool, generateJSON, generateMarkdownTable } from '../GoalAnalyst';
 import { Copy, Check, Download } from 'lucide-react';
 
 interface ExportViewProps {

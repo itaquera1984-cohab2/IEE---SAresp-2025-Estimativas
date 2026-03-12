@@ -21,7 +21,7 @@ export default defineConfig(({mode}) => {
       hmr: process.env.DISABLE_HMR !== 'true',
     },
     build: {
-      chunkSizeWarningLimit: 1000,
+      chunkSizeWarningLimit: 1500,
       rollupOptions: {
         output: {
           manualChunks(id) {
@@ -34,6 +34,9 @@ export default defineConfig(({mode}) => {
               }
               if (id.includes('react') || id.includes('react-dom')) {
                 return 'vendor-react';
+              }
+              if (id.includes('lucide-react')) {
+                return 'vendor-icons';
               }
               return 'vendor';
             }
